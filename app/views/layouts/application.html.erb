@@ -10,6 +10,13 @@
   </head>
 
   <body>
+      <nav class="navbar navbar-light" style="background-color: rgba(255,164,91,0.7);">
+        <spam class="navbar-brand mb-0 h1">Restaurants</spam>
+        <form class="form-inline">
+          <%= link_to 'Home', restaurants_path, class: "btn btn-outline-dark mr-sm-2" %>
+          <%= link_to 'Add Restaurant', new_restaurant_path, class: "btn btn-outline-dark" %>
+        </form>
+      </nav>
     <%= yield %>
   </body>
 </html>
