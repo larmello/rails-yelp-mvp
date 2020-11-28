@@ -39,9 +39,9 @@
       <div class="card p-3 mb-3">
       <% @restaurant.reviews.each do |review| %>
         <p>
-          <%= review.rating %>
-          <%= review.content %>
-          <%= link_to 'Delete', review_path(review), method: :delete, data: { confirm: 'Sure?'} %>
+          <p><%= review.rating %> Stars</p>
+          <p><%= review.content %></p>
+          <%= link_to 'Delete', review_path(review), class: 'btn btn-outline-warning', method: :delete, data: { confirm: 'Sure?'} %>
           <hr>
         </p>
       <% end %>
